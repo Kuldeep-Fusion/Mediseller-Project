@@ -1,24 +1,20 @@
-let scrollController = document.querySelector('.image-gallery');
-let nextBtn = document.querySelector('.btn-1'); 
-let prevBtn = document.querySelector('.btn-2'); 
 
-scrollController.addEventListener('wheel', (e) => {
-e.preventDefault();
-scrollController.style.scrollBehavior = "smooth"
-scrollController.scrollLeft += e.deltaY;
+setInterval(function() {
+    var whatsappIcon = document.getElementById('whatsappIcon');
+    whatsappIcon.classList.add('shake'); // Add shake class
+    setTimeout(function() {
+      whatsappIcon.classList.remove('shake'); // Remove shake class after 0.5s
+    }, 500);
+  }, 2000); // Repeat every 10 seconds
 
-});
 
-prevBtn.addEventListener('click', () => {
-    scrollController.scrollBy({
-        left: -300,
-        behavior: 'smooth'
-    });
-});
 
-nextBtn.addEventListener('click', () => {
-    scrollController.scrollBy({
-        left: 300,
-        behavior: 'smooth'
-    });
-});
+  // window.addEventListener('scroll', function() {
+//     var navbar = document.getElementById('navbar');
+//     var scrollPosition = window.scrollY;
+//     var maxScroll = document.documentElement.scrollHeight - window.innerHeight;
+//     var scrollPercentage = (scrollPosition / maxScroll) * 100;
+//     var redValue = Math.min(255, Math.floor(scrollPercentage * 2.55));
+//     navbar.style.backgroundColor = 'rgb(255,' + (255 - redValue) + ',' + (255 - redValue) + ')';
+//   });
+  

@@ -14,52 +14,43 @@
 
 <!--header-start-->
 <header class="">
-<div class="container-fluid d-flex justify-content-around align-items-center p-3 me-3"> 
-    <div class="logo">
-        <img src="assets/logo.png" class="img-fluid" alt="logo">
-    </div>
-    <div class="search-bar w-75 bg-danger rounded">
-        <form class="d-flex full" role="search">
-            <input class="form-control " type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-danger px-4 py-2 " type="submit"><i class="fa-solid fa-magnifying-glass fs-5"></i></button>
-          </form>
-    </div>
-    <div class="icons d-flex grid gap-3">
-        
-    </div>
-</div>
 </header>
 
 <!-----navbar-start--->
-<nav class="navbar navbar-expand-lg bg-danger">
-  <div class="container-fluid ">
+<nav class="navbar navbar-expand-lg border-bottom border-2 bg-light fixed-top" id="navbar"> <!-- Add id for easy selection in JavaScript -->
+  <div class="container-fluid px-5">
+    <img src="assets/logo.png" class="img-fluid" width="50" alt="">
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav m-auto mb-2 mb-lg-0 ">
-        <li class="nav-item ">
-          <a class="nav-link text-white active" aria-current="page" href="index.html">Home</a>
+    <div class="collapse navbar-collapse shift" id="navbarSupportedContent">
+      <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-4">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="index.html">Home</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link text-white" href="#">About</a>
+          <a class="nav-link" href="#">About</a>
         </li>
         <li class="nav-item dropdown">
-          <a class="nav-link text-white dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
             Product
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" href="Evolve-Biolabs.html">Evolve Biolabs</a></li>
             <li><a class="dropdown-item" href="Alpha.html">Alpha Pharma</a></li>
             <li><a class="dropdown-item" href="maxtreme-pharma.html">Maxtern Pharma - Anabolic</a></li>
-            
           </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Contact-Us</a>
         </li>
       </ul>
     </div>
   </div>
 </nav>
-
 
 <!---caesural---->
 <section >
@@ -123,7 +114,6 @@
         
        
       </div>
-      
     <div class="col-6 col-md-3 mb-md-0 mb-4">
       <div class="main-card">
         <div class="trending-card d-flex justify-content-between">
